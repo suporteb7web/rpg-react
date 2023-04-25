@@ -37,7 +37,7 @@ export const useCharacter = (propName: string) => {
     }
 
     const canMove = (x: number, y: number) => {
-        if(mapSpots[y] !== undefined && mapSpots[y][x] !== undefined) {
+        if(mapSpots[y] !== undefined && mapSpots[x] !== undefined) {
             return (mapSpots[y][x] === 1);
         }
         return false;
